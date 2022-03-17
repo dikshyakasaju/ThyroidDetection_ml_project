@@ -26,3 +26,7 @@
 2022-03-16/19:23:56		Closed Training database successfully
 2022-03-16/19:23:56		Opened Training database successfully
 2022-03-16/19:23:57		Opened Training database successfully
+2022-03-17/13:23:24		Opened Training database successfully
+2022-03-17/13:23:24		Closed Training database successfully
+2022-03-17/13:23:24		Opened Training database successfully
+2022-03-17/13:23:26		Opened Training database successfully
