@@ -1,0 +1,7 @@
+setup.py
+tests/__init__.py
+tests/test_script.py
+thyroid_detection.egg-info/PKG-INFO
+thyroid_detection.egg-info/SOURCES.txt
+thyroid_detection.egg-info/dependency_links.txt
+thyroid_detection.egg-info/top_level.txt

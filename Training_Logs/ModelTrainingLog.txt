@@ -1,0 +1,228 @@
+2022-03-02/10:15:02		Start of Training
+2022-03-02/10:15:02		Entered the get_data method of the Data_Getter class
+2022-03-02/10:15:02		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-03-02/10:15:02		Successfully dropped the columns['TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured', 'TBG']
+2022-03-02/10:15:02		Successful conversion of categorical data to numerical
+2022-03-02/10:15:02		Type conversion successful for numerical data
+2022-03-02/10:15:02		Entered the separate_label_feature method of the Preprocessor class
+2022-03-02/10:15:02		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-03-02/10:15:02		Entered the is_null_present method of the Preprocessor class
+2022-03-02/10:15:02		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-03-02/10:15:02		Entered the impute_missing_values method of the Preprocessor class
+2022-03-02/10:15:06		Missing values imputed using KNNImputer for ['age', 'sex', 'TSH', 'TT4', 'FTI'] cols
+2022-03-02/10:15:06		Missing values imputed using median  for 'T4U', 'T3' cols
+2022-03-02/10:15:06		'age', 'sex', 'TSH', 'TT4', 'FTI' columns dropped successfully
+2022-03-02/10:15:06		New dataframe created  successfully
+2022-03-02/10:15:06		Entered the elbow_plot method of the KMeansClustering class
+2022-03-02/10:15:16		The optimum number of clusters is: 4 . Exited the elbow_plot method of the KMeansClustering class
+2022-03-02/10:15:16		Entered the create_clusters method of the KMeansClustering class
+2022-03-02/10:15:17		Entered the save_model method of the File_Operation class
+2022-03-02/10:15:17		Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2022-03-02/10:15:17		successfully created 4clusters. Exited the create_clusters method of the KMeansClustering class
+2022-03-02/10:15:17		Entered the get_best_model method of the Model_Finder class
+2022-03-02/10:15:17		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-03-02/10:19:13		XGBoost best params: {'min_child_weight': 5, 'max_depth': 12, 'learning_rate': 0.3, 'gamma': 0.4, 'colsample_bytree': 0.7} 	 Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-03-02/10:19:13		AUC for XGBoost:1.0
+2022-03-02/10:19:13		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:19:35		Random Forest best params: {'n_estimators': 80, 'min_samples_split': 4, 'min_samples_leaf': 5, 'max_leaf_nodes': 32, 'max_depth': 22, 'criterion': 'gini'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:19:35		AUC for RandomForest:0.9998458202409438
+2022-03-02/10:19:35		Entered the save_model method of the File_Operation class
+2022-03-02/10:19:35		Model File XGBoost0 saved. Exited the save_model method of the Model_Finder class
+2022-03-02/10:19:35		Entered the get_best_model method of the Model_Finder class
+2022-03-02/10:19:35		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-03-02/10:26:04		XGBoost best params: {'min_child_weight': 1, 'max_depth': 12, 'learning_rate': 0.1, 'gamma': 0.2, 'colsample_bytree': 0.4} 	 Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-03-02/10:26:04		AUC for XGBoost:1.0
+2022-03-02/10:26:04		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:26:24		Random Forest best params: {'n_estimators': 75, 'min_samples_split': 6, 'min_samples_leaf': 5, 'max_leaf_nodes': 33, 'max_depth': 100, 'criterion': 'gini'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:26:24		AUC for RandomForest:0.9999917615948186
+2022-03-02/10:26:24		Entered the save_model method of the File_Operation class
+2022-03-02/10:26:24		Model File XGBoost2 saved. Exited the save_model method of the Model_Finder class
+2022-03-02/10:26:24		Entered the get_best_model method of the Model_Finder class
+2022-03-02/10:26:24		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-03-02/10:27:08		XGBoost best params: {'min_child_weight': 1, 'max_depth': 12, 'learning_rate': 0.25, 'gamma': 0.0, 'colsample_bytree': 0.3} 	 Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-03-02/10:27:08		AUC for XGBoost:1.0
+2022-03-02/10:27:08		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:27:14		Random Forest best params: {'n_estimators': 55, 'min_samples_split': 3, 'min_samples_leaf': 8, 'max_leaf_nodes': 29, 'max_depth': 87, 'criterion': 'gini'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:27:14		AUC for RandomForest:0.99769079782935
+2022-03-02/10:27:14		Entered the save_model method of the File_Operation class
+2022-03-02/10:27:14		Model File XGBoost3 saved. Exited the save_model method of the Model_Finder class
+2022-03-02/10:27:14		Entered the get_best_model method of the Model_Finder class
+2022-03-02/10:27:14		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-03-02/10:27:17		XGBoost best params: {'min_child_weight': 5, 'max_depth': 3, 'learning_rate': 0.05, 'gamma': 0.3, 'colsample_bytree': 0.4} 	 Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-03-02/10:27:17		Exception occurred in get_best_model method of the Model_Finder class. Exception message:  Classification metrics can't handle a mix of binary and continuous-multioutput targets
+2022-03-02/10:27:17		Model Selection Failed. Exited the get_best_model method of the Model_Finder class
+2022-03-02/10:27:17		Unsuccessful End of Training
+2022-03-02/10:39:24		Start of Training
+2022-03-02/10:39:24		Entered the get_data method of the Data_Getter class
+2022-03-02/10:39:24		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-03-02/10:39:24		Successfully dropped the columns['TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured', 'TBG']
+2022-03-02/10:39:24		Successful conversion of categorical data to numerical
+2022-03-02/10:39:24		Type conversion successful for numerical data
+2022-03-02/10:39:24		Entered the separate_label_feature method of the Preprocessor class
+2022-03-02/10:39:24		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-03-02/10:39:24		Entered the is_null_present method of the Preprocessor class
+2022-03-02/10:39:24		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-03-02/10:39:24		Entered the impute_missing_values method of the Preprocessor class
+2022-03-02/10:39:30		Missing values imputed using KNNImputer for ['age', 'sex', 'TSH', 'TT4', 'FTI'] cols
+2022-03-02/10:39:30		Missing values imputed using median  for 'T4U', 'T3' cols
+2022-03-02/10:39:30		'age', 'sex', 'TSH', 'TT4', 'FTI' columns dropped successfully
+2022-03-02/10:39:30		New dataframe created  successfully
+2022-03-02/10:39:30		Entered the elbow_plot method of the KMeansClustering class
+2022-03-02/10:39:42		The optimum number of clusters is: 4 . Exited the elbow_plot method of the KMeansClustering class
+2022-03-02/10:39:42		Entered the create_clusters method of the KMeansClustering class
+2022-03-02/10:39:43		Entered the save_model method of the File_Operation class
+2022-03-02/10:39:43		Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2022-03-02/10:39:43		successfully created 4clusters. Exited the create_clusters method of the KMeansClustering class
+2022-03-02/10:39:43		Entered the get_best_model method of the Model_Finder class
+2022-03-02/10:39:43		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-02/10:40:23		KNN best params: {'p': 2, 'n_neighbors': 4, 'leaf_size': 10, 'algorithm': 'ball_tree'}. Exited the KNN method of the Model_Finder class
+2022-03-02/10:40:23		AUC for KNN:1.0
+2022-03-02/10:40:23		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:40:43		Random Forest best params: {'n_estimators': 40, 'min_samples_split': 4, 'min_samples_leaf': 6, 'max_leaf_nodes': 33, 'max_depth': 74, 'criterion': 'gini'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:40:43		AUC for RandomForest:0.999901219341691
+2022-03-02/10:40:43		Entered the save_model method of the File_Operation class
+2022-03-02/10:40:43		Model File KNN2 saved. Exited the save_model method of the Model_Finder class
+2022-03-02/10:40:43		Entered the get_best_model method of the Model_Finder class
+2022-03-02/10:40:43		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-02/10:41:34		KNN best params: {'p': 1, 'n_neighbors': 4, 'leaf_size': 10, 'algorithm': 'kd_tree'}. Exited the KNN method of the Model_Finder class
+2022-03-02/10:41:36		AUC for KNN:1.0
+2022-03-02/10:41:36		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:41:54		Random Forest best params: {'n_estimators': 80, 'min_samples_split': 5, 'min_samples_leaf': 5, 'max_leaf_nodes': 32, 'max_depth': 74, 'criterion': 'entropy'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:41:54		AUC for RandomForest:1.0
+2022-03-02/10:41:54		Entered the save_model method of the File_Operation class
+2022-03-02/10:41:54		Model File RandomForest0 saved. Exited the save_model method of the Model_Finder class
+2022-03-02/10:41:54		Entered the get_best_model method of the Model_Finder class
+2022-03-02/10:41:54		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-02/10:41:56		KNN best params: {'p': 2, 'n_neighbors': 5, 'leaf_size': 28, 'algorithm': 'kd_tree'}. Exited the KNN method of the Model_Finder class
+2022-03-02/10:41:56		AUC for KNN:1.0
+2022-03-02/10:41:56		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:42:02		Random Forest best params: {'n_estimators': 120, 'min_samples_split': 4, 'min_samples_leaf': 9, 'max_leaf_nodes': 30, 'max_depth': 48, 'criterion': 'gini'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:42:02		AUC for RandomForest:0.9978474423701617
+2022-03-02/10:42:02		Entered the save_model method of the File_Operation class
+2022-03-02/10:42:02		Model File KNN3 saved. Exited the save_model method of the Model_Finder class
+2022-03-02/10:42:02		Entered the get_best_model method of the Model_Finder class
+2022-03-02/10:42:02		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-02/10:42:03		KNN best params: {'p': 1, 'n_neighbors': 8, 'leaf_size': 30, 'algorithm': 'brute'}. Exited the KNN method of the Model_Finder class
+2022-03-02/10:42:03		Accuracy for KNN:0.0
+2022-03-02/10:42:03		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:42:06		Random Forest best params: {'n_estimators': 100, 'min_samples_split': 7, 'min_samples_leaf': 5, 'max_leaf_nodes': 32, 'max_depth': 10, 'criterion': 'entropy'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-02/10:42:06		Accuracy for RandomForest:0.0
+2022-03-02/10:42:06		Entered the save_model method of the File_Operation class
+2022-03-02/10:42:06		Model File RandomForest1 saved. Exited the save_model method of the Model_Finder class
+2022-03-02/10:42:06		Successful End of Training
+2022-03-06/09:45:25		Start of Training
+2022-03-06/09:45:25		Entered the get_data method of the Data_Getter class
+2022-03-06/09:45:25		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-03-06/09:45:25		Successfully dropped the columns['TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured', 'TBG']
+2022-03-06/09:45:25		Successful conversion of categorical data to numerical
+2022-03-06/09:45:25		Type conversion successful for numerical data
+2022-03-06/09:45:25		Entered the separate_label_feature method of the Preprocessor class
+2022-03-06/09:45:25		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-03-06/09:45:25		Entered the is_null_present method of the Preprocessor class
+2022-03-06/09:45:25		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-03-06/09:45:25		Entered the impute_missing_values method of the Preprocessor class
+2022-03-06/09:45:30		Missing values imputed using KNNImputer for ['age', 'sex', 'TSH', 'TT4', 'FTI'] cols
+2022-03-06/09:45:30		Missing values imputed using median  for 'T4U', 'T3' cols
+2022-03-06/09:45:30		'age', 'sex', 'TSH', 'TT4', 'FTI' columns dropped successfully
+2022-03-06/09:45:30		New dataframe created  successfully
+2022-03-06/09:45:30		Entered the elbow_plot method of the KMeansClustering class
+2022-03-06/09:45:41		The optimum number of clusters is: 4 . Exited the elbow_plot method of the KMeansClustering class
+2022-03-06/09:45:41		Entered the create_clusters method of the KMeansClustering class
+2022-03-06/09:45:41		Entered the save_model method of the File_Operation class
+2022-03-06/09:45:41		Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2022-03-06/09:45:41		successfully created 4clusters. Exited the create_clusters method of the KMeansClustering class
+2022-03-06/09:45:41		Entered the get_best_model method of the Model_Finder class
+2022-03-06/09:45:41		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-06/09:46:13		KNN best params: {'p': 2, 'n_neighbors': 5, 'leaf_size': 24, 'algorithm': 'brute'}. Exited the KNN method of the Model_Finder class
+2022-03-06/09:46:19		AUC for KNN:1.0
+2022-03-06/09:46:19		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-06/09:46:37		Random Forest best params: {'n_estimators': 80, 'min_samples_split': 7, 'min_samples_leaf': 5, 'max_leaf_nodes': 32, 'max_depth': 74, 'criterion': 'gini'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-06/09:46:37		AUC for RandomForest:0.999905472982853
+2022-03-06/09:46:37		Entered the save_model method of the File_Operation class
+2022-03-06/09:46:37		Model File KNN0 saved. Exited the save_model method of the Model_Finder class
+2022-03-06/09:46:37		Entered the get_best_model method of the Model_Finder class
+2022-03-06/09:46:37		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-06/09:47:35		KNN best params: {'p': 1, 'n_neighbors': 4, 'leaf_size': 17, 'algorithm': 'ball_tree'}. Exited the KNN method of the Model_Finder class
+2022-03-06/09:47:36		AUC for KNN:1.0
+2022-03-06/09:47:36		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-06/09:47:59		Random Forest best params: {'n_estimators': 120, 'min_samples_split': 7, 'min_samples_leaf': 5, 'max_leaf_nodes': 30, 'max_depth': 61, 'criterion': 'entropy'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-06/09:47:59		AUC for RandomForest:1.0
+2022-03-06/09:47:59		Entered the save_model method of the File_Operation class
+2022-03-06/09:47:59		Model File RandomForest1 saved. Exited the save_model method of the Model_Finder class
+2022-03-06/09:47:59		Entered the get_best_model method of the Model_Finder class
+2022-03-06/09:47:59		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-06/09:48:02		KNN best params: {'p': 1, 'n_neighbors': 5, 'leaf_size': 35, 'algorithm': 'kd_tree'}. Exited the KNN method of the Model_Finder class
+2022-03-06/09:48:03		AUC for KNN:1.0
+2022-03-06/09:48:03		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-06/09:48:08		Random Forest best params: {'n_estimators': 40, 'min_samples_split': 3, 'min_samples_leaf': 9, 'max_leaf_nodes': 30, 'max_depth': 61, 'criterion': 'entropy'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-06/09:48:08		AUC for RandomForest:0.9985593121877542
+2022-03-06/09:48:08		Entered the save_model method of the File_Operation class
+2022-03-06/09:48:08		Model File KNN3 saved. Exited the save_model method of the Model_Finder class
+2022-03-06/09:48:08		Entered the get_best_model method of the Model_Finder class
+2022-03-06/09:48:08		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-06/09:48:08		KNN best params: {'p': 2, 'n_neighbors': 10, 'leaf_size': 17, 'algorithm': 'brute'}. Exited the KNN method of the Model_Finder class
+2022-03-06/09:48:08		Accuracy for KNN:0.0
+2022-03-06/09:48:08		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-06/09:48:12		Random Forest best params: {'n_estimators': 100, 'min_samples_split': 6, 'min_samples_leaf': 5, 'max_leaf_nodes': 30, 'max_depth': 10, 'criterion': 'gini'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-06/09:48:12		Accuracy for RandomForest:0.0
+2022-03-06/09:48:12		Entered the save_model method of the File_Operation class
+2022-03-06/09:48:12		Model File RandomForest2 saved. Exited the save_model method of the Model_Finder class
+2022-03-06/09:48:12		Successful End of Training
+2022-03-16/19:23:58		Start of Training
+2022-03-16/19:23:58		Entered the get_data method of the Data_Getter class
+2022-03-16/19:23:58		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-03-16/19:23:58		Successfully dropped the columns['TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured', 'TBG']
+2022-03-16/19:23:58		Successful conversion of categorical data to numerical
+2022-03-16/19:23:58		Type conversion successful for numerical data
+2022-03-16/19:23:58		Entered the separate_label_feature method of the Preprocessor class
+2022-03-16/19:23:58		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-03-16/19:23:58		Entered the is_null_present method of the Preprocessor class
+2022-03-16/19:23:58		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-03-16/19:23:58		Entered the impute_missing_values method of the Preprocessor class
+2022-03-16/19:24:05		Missing values imputed using KNNImputer for ['age', 'sex', 'TSH', 'TT4', 'FTI'] cols
+2022-03-16/19:24:05		Missing values imputed using median  for 'T4U', 'T3' cols
+2022-03-16/19:24:05		'age', 'sex', 'TSH', 'TT4', 'FTI' columns dropped successfully
+2022-03-16/19:24:05		New dataframe created  successfully
+2022-03-16/19:24:05		Entered the elbow_plot method of the KMeansClustering class
+2022-03-16/19:24:19		The optimum number of clusters is: 4 . Exited the elbow_plot method of the KMeansClustering class
+2022-03-16/19:24:19		Entered the create_clusters method of the KMeansClustering class
+2022-03-16/19:24:19		Entered the save_model method of the File_Operation class
+2022-03-16/19:24:19		Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2022-03-16/19:24:19		successfully created 4clusters. Exited the create_clusters method of the KMeansClustering class
+2022-03-16/19:24:19		Entered the get_best_model method of the Model_Finder class
+2022-03-16/19:24:19		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-16/19:25:01		KNN best params: {'p': 2, 'n_neighbors': 4, 'leaf_size': 24, 'algorithm': 'ball_tree'}. Exited the KNN method of the Model_Finder class
+2022-03-16/19:25:02		AUC for KNN:1.0
+2022-03-16/19:25:02		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-16/19:25:24		Random Forest best params: {'n_estimators': 40, 'min_samples_split': 3, 'min_samples_leaf': 5, 'max_leaf_nodes': 32, 'max_depth': 35, 'criterion': 'gini'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-16/19:25:24		AUC for RandomForest:0.9999893409941971
+2022-03-16/19:25:24		Entered the save_model method of the File_Operation class
+2022-03-16/19:25:24		Model File KNN1 saved. Exited the save_model method of the Model_Finder class
+2022-03-16/19:25:24		Entered the get_best_model method of the Model_Finder class
+2022-03-16/19:25:24		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-16/19:26:28		KNN best params: {'p': 2, 'n_neighbors': 4, 'leaf_size': 28, 'algorithm': 'ball_tree'}. Exited the KNN method of the Model_Finder class
+2022-03-16/19:26:31		AUC for KNN:1.0
+2022-03-16/19:26:31		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-16/19:26:54		Random Forest best params: {'n_estimators': 100, 'min_samples_split': 5, 'min_samples_leaf': 5, 'max_leaf_nodes': 33, 'max_depth': 35, 'criterion': 'gini'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-16/19:26:54		AUC for RandomForest:1.0
+2022-03-16/19:26:54		Entered the save_model method of the File_Operation class
+2022-03-16/19:26:54		Model File RandomForest3 saved. Exited the save_model method of the Model_Finder class
+2022-03-16/19:26:54		Entered the get_best_model method of the Model_Finder class
+2022-03-16/19:26:54		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-16/19:26:57		KNN best params: {'p': 2, 'n_neighbors': 4, 'leaf_size': 24, 'algorithm': 'kd_tree'}. Exited the KNN method of the Model_Finder class
+2022-03-16/19:26:58		AUC for KNN:1.0
+2022-03-16/19:26:58		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-16/19:27:03		Random Forest best params: {'n_estimators': 80, 'min_samples_split': 5, 'min_samples_leaf': 8, 'max_leaf_nodes': 32, 'max_depth': 22, 'criterion': 'gini'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-16/19:27:03		AUC for RandomForest:1.0
+2022-03-16/19:27:03		Entered the save_model method of the File_Operation class
+2022-03-16/19:27:03		Model File RandomForest0 saved. Exited the save_model method of the Model_Finder class
+2022-03-16/19:27:03		Entered the get_best_model method of the Model_Finder class
+2022-03-16/19:27:03		Entered the get_best_params_for_Ensembled_KNN method of the Model_Finder class
+2022-03-16/19:27:04		KNN best params: {'p': 2, 'n_neighbors': 10, 'leaf_size': 30, 'algorithm': 'brute'}. Exited the KNN method of the Model_Finder class
+2022-03-16/19:27:04		Accuracy for KNN:1.0
+2022-03-16/19:27:04		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-16/19:27:07		Random Forest best params: {'n_estimators': 120, 'min_samples_split': 2, 'min_samples_leaf': 9, 'max_leaf_nodes': 33, 'max_depth': 35, 'criterion': 'entropy'}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-03-16/19:27:07		Accuracy for RandomForest:1.0
+2022-03-16/19:27:07		Entered the save_model method of the File_Operation class
+2022-03-16/19:27:07		Model File RandomForest2 saved. Exited the save_model method of the Model_Finder class
+2022-03-16/19:27:07		Successful End of Training

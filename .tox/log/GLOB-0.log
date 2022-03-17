@@ -1,0 +1,43 @@
+action: GLOB, msg: packaging
+cwd: /Users/dikshyakasaju/PycharmProjects/Thyroid_Detection_2022
+cmd: /Users/dikshyakasaju/opt/anaconda3/envs/Thyroid_Detection_2022/bin/python setup.py sdist --formats=zip --dist-dir .tox/dist
+running sdist
+running egg_info
+writing thyroid_detection.egg-info/PKG-INFO
+writing dependency_links to thyroid_detection.egg-info/dependency_links.txt
+writing top-level names to thyroid_detection.egg-info/top_level.txt
+reading manifest file 'thyroid_detection.egg-info/SOURCES.txt'
+writing manifest file 'thyroid_detection.egg-info/SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: if 'author' supplied, 'author_email' must be supplied too
+
+creating thyroid-detection-0.0.1
+creating thyroid-detection-0.0.1/tests
+creating thyroid-detection-0.0.1/thyroid_detection.egg-info
+copying files to thyroid-detection-0.0.1...
+copying setup.py -> thyroid-detection-0.0.1
+copying tests/__init__.py -> thyroid-detection-0.0.1/tests
+copying tests/test_script.py -> thyroid-detection-0.0.1/tests
+copying thyroid_detection.egg-info/PKG-INFO -> thyroid-detection-0.0.1/thyroid_detection.egg-info
+copying thyroid_detection.egg-info/SOURCES.txt -> thyroid-detection-0.0.1/thyroid_detection.egg-info
+copying thyroid_detection.egg-info/dependency_links.txt -> thyroid-detection-0.0.1/thyroid_detection.egg-info
+copying thyroid_detection.egg-info/top_level.txt -> thyroid-detection-0.0.1/thyroid_detection.egg-info
+Writing thyroid-detection-0.0.1/setup.cfg
+creating '.tox/dist/thyroid-detection-0.0.1.zip' and adding 'thyroid-detection-0.0.1' to it
+adding 'thyroid-detection-0.0.1'
+adding 'thyroid-detection-0.0.1/thyroid_detection.egg-info'
+adding 'thyroid-detection-0.0.1/tests'
+adding 'thyroid-detection-0.0.1/PKG-INFO'
+adding 'thyroid-detection-0.0.1/setup.py'
+adding 'thyroid-detection-0.0.1/setup.cfg'
+adding 'thyroid-detection-0.0.1/thyroid_detection.egg-info/PKG-INFO'
+adding 'thyroid-detection-0.0.1/thyroid_detection.egg-info/SOURCES.txt'
+adding 'thyroid-detection-0.0.1/thyroid_detection.egg-info/top_level.txt'
+adding 'thyroid-detection-0.0.1/thyroid_detection.egg-info/dependency_links.txt'
+adding 'thyroid-detection-0.0.1/tests/test_script.py'
+adding 'thyroid-detection-0.0.1/tests/__init__.py'
+removing 'thyroid-detection-0.0.1' (and everything under it)
