@@ -3,11 +3,11 @@ cwd: /Users/dikshyakasaju/PycharmProjects/Thyroid_Detection_2022
 cmd: /Users/dikshyakasaju/opt/anaconda3/envs/Thyroid_Detection_2022/bin/python setup.py sdist --formats=zip --dist-dir .tox/dist
 running sdist
 running egg_info
-writing thyroid_detection.egg-info/PKG-INFO
-writing dependency_links to thyroid_detection.egg-info/dependency_links.txt
-writing top-level names to thyroid_detection.egg-info/top_level.txt
-reading manifest file 'thyroid_detection.egg-info/SOURCES.txt'
-writing manifest file 'thyroid_detection.egg-info/SOURCES.txt'
+writing Thyroid_Detection_2022.egg-info/PKG-INFO
+writing dependency_links to Thyroid_Detection_2022.egg-info/dependency_links.txt
+writing top-level names to Thyroid_Detection_2022.egg-info/top_level.txt
+reading manifest file 'Thyroid_Detection_2022.egg-info/SOURCES.txt'
+writing manifest file 'Thyroid_Detection_2022.egg-info/SOURCES.txt'
 warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
 
 running check
@@ -15,29 +15,99 @@ warning: check: missing required meta-data: url
 
 warning: check: missing meta-data: if 'author' supplied, 'author_email' must be supplied too
 
-creating thyroid-detection-0.0.1
-creating thyroid-detection-0.0.1/tests
-creating thyroid-detection-0.0.1/thyroid_detection.egg-info
-copying files to thyroid-detection-0.0.1...
-copying setup.py -> thyroid-detection-0.0.1
-copying tests/__init__.py -> thyroid-detection-0.0.1/tests
-copying tests/test_script.py -> thyroid-detection-0.0.1/tests
-copying thyroid_detection.egg-info/PKG-INFO -> thyroid-detection-0.0.1/thyroid_detection.egg-info
-copying thyroid_detection.egg-info/SOURCES.txt -> thyroid-detection-0.0.1/thyroid_detection.egg-info
-copying thyroid_detection.egg-info/dependency_links.txt -> thyroid-detection-0.0.1/thyroid_detection.egg-info
-copying thyroid_detection.egg-info/top_level.txt -> thyroid-detection-0.0.1/thyroid_detection.egg-info
-Writing thyroid-detection-0.0.1/setup.cfg
-creating '.tox/dist/thyroid-detection-0.0.1.zip' and adding 'thyroid-detection-0.0.1' to it
-adding 'thyroid-detection-0.0.1'
-adding 'thyroid-detection-0.0.1/thyroid_detection.egg-info'
-adding 'thyroid-detection-0.0.1/tests'
-adding 'thyroid-detection-0.0.1/PKG-INFO'
-adding 'thyroid-detection-0.0.1/setup.py'
-adding 'thyroid-detection-0.0.1/setup.cfg'
-adding 'thyroid-detection-0.0.1/thyroid_detection.egg-info/PKG-INFO'
-adding 'thyroid-detection-0.0.1/thyroid_detection.egg-info/SOURCES.txt'
-adding 'thyroid-detection-0.0.1/thyroid_detection.egg-info/top_level.txt'
-adding 'thyroid-detection-0.0.1/thyroid_detection.egg-info/dependency_links.txt'
-adding 'thyroid-detection-0.0.1/tests/test_script.py'
-adding 'thyroid-detection-0.0.1/tests/__init__.py'
-removing 'thyroid-detection-0.0.1' (and everything under it)
+creating Thyroid_Detection_2022-0.0.1
+creating Thyroid_Detection_2022-0.0.1/DataTransform_Training
+creating Thyroid_Detection_2022-0.0.1/DataTransformation_Prediction
+creating Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Prediction
+creating Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Training
+creating Thyroid_Detection_2022-0.0.1/Prediction_Raw_Data_Validation
+creating Thyroid_Detection_2022-0.0.1/Thyroid_Detection_2022.egg-info
+creating Thyroid_Detection_2022-0.0.1/Training_Raw_data_validation
+creating Thyroid_Detection_2022-0.0.1/application_logging
+creating Thyroid_Detection_2022-0.0.1/best_model_finder
+creating Thyroid_Detection_2022-0.0.1/data_ingestion
+creating Thyroid_Detection_2022-0.0.1/data_preprocessing
+creating Thyroid_Detection_2022-0.0.1/file_operations
+creating Thyroid_Detection_2022-0.0.1/tests
+copying files to Thyroid_Detection_2022-0.0.1...
+copying setup.py -> Thyroid_Detection_2022-0.0.1
+copying DataTransform_Training/DataTransformation.py -> Thyroid_Detection_2022-0.0.1/DataTransform_Training
+copying DataTransform_Training/__init__.py -> Thyroid_Detection_2022-0.0.1/DataTransform_Training
+copying DataTransformation_Prediction/DataTransformationPrediction.py -> Thyroid_Detection_2022-0.0.1/DataTransformation_Prediction
+copying DataTransformation_Prediction/__init__.py -> Thyroid_Detection_2022-0.0.1/DataTransformation_Prediction
+copying DataTypeValidation_Insertion_Prediction/DataTypeValidationPrediction.py -> Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Prediction
+copying DataTypeValidation_Insertion_Prediction/__init__.py -> Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Prediction
+copying DataTypeValidation_Insertion_Training/DataTypeValidation.py -> Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Training
+copying DataTypeValidation_Insertion_Training/__init__.py -> Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Training
+copying Prediction_Raw_Data_Validation/__init__.py -> Thyroid_Detection_2022-0.0.1/Prediction_Raw_Data_Validation
+copying Prediction_Raw_Data_Validation/predictionDataValidation.py -> Thyroid_Detection_2022-0.0.1/Prediction_Raw_Data_Validation
+copying Thyroid_Detection_2022.egg-info/PKG-INFO -> Thyroid_Detection_2022-0.0.1/Thyroid_Detection_2022.egg-info
+copying Thyroid_Detection_2022.egg-info/SOURCES.txt -> Thyroid_Detection_2022-0.0.1/Thyroid_Detection_2022.egg-info
+copying Thyroid_Detection_2022.egg-info/dependency_links.txt -> Thyroid_Detection_2022-0.0.1/Thyroid_Detection_2022.egg-info
+copying Thyroid_Detection_2022.egg-info/top_level.txt -> Thyroid_Detection_2022-0.0.1/Thyroid_Detection_2022.egg-info
+copying Training_Raw_data_validation/__init__.py -> Thyroid_Detection_2022-0.0.1/Training_Raw_data_validation
+copying Training_Raw_data_validation/rawValidation.py -> Thyroid_Detection_2022-0.0.1/Training_Raw_data_validation
+copying application_logging/__init__.py -> Thyroid_Detection_2022-0.0.1/application_logging
+copying application_logging/logger.py -> Thyroid_Detection_2022-0.0.1/application_logging
+copying best_model_finder/__init__.py -> Thyroid_Detection_2022-0.0.1/best_model_finder
+copying best_model_finder/tuner.py -> Thyroid_Detection_2022-0.0.1/best_model_finder
+copying data_ingestion/__init__.py -> Thyroid_Detection_2022-0.0.1/data_ingestion
+copying data_ingestion/data_loader.py -> Thyroid_Detection_2022-0.0.1/data_ingestion
+copying data_ingestion/data_loader_prediction.py -> Thyroid_Detection_2022-0.0.1/data_ingestion
+copying data_preprocessing/__init__.py -> Thyroid_Detection_2022-0.0.1/data_preprocessing
+copying data_preprocessing/clustering.py -> Thyroid_Detection_2022-0.0.1/data_preprocessing
+copying data_preprocessing/preprocessing.py -> Thyroid_Detection_2022-0.0.1/data_preprocessing
+copying file_operations/__init__.py -> Thyroid_Detection_2022-0.0.1/file_operations
+copying file_operations/file_methods.py -> Thyroid_Detection_2022-0.0.1/file_operations
+copying tests/__init__.py -> Thyroid_Detection_2022-0.0.1/tests
+copying tests/test_script.py -> Thyroid_Detection_2022-0.0.1/tests
+Writing Thyroid_Detection_2022-0.0.1/setup.cfg
+creating '.tox/dist/Thyroid_Detection_2022-0.0.1.zip' and adding 'Thyroid_Detection_2022-0.0.1' to it
+adding 'Thyroid_Detection_2022-0.0.1'
+adding 'Thyroid_Detection_2022-0.0.1/DataTransform_Training'
+adding 'Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Training'
+adding 'Thyroid_Detection_2022-0.0.1/Training_Raw_data_validation'
+adding 'Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Prediction'
+adding 'Thyroid_Detection_2022-0.0.1/tests'
+adding 'Thyroid_Detection_2022-0.0.1/file_operations'
+adding 'Thyroid_Detection_2022-0.0.1/application_logging'
+adding 'Thyroid_Detection_2022-0.0.1/best_model_finder'
+adding 'Thyroid_Detection_2022-0.0.1/data_preprocessing'
+adding 'Thyroid_Detection_2022-0.0.1/Prediction_Raw_Data_Validation'
+adding 'Thyroid_Detection_2022-0.0.1/data_ingestion'
+adding 'Thyroid_Detection_2022-0.0.1/Thyroid_Detection_2022.egg-info'
+adding 'Thyroid_Detection_2022-0.0.1/DataTransformation_Prediction'
+adding 'Thyroid_Detection_2022-0.0.1/PKG-INFO'
+adding 'Thyroid_Detection_2022-0.0.1/setup.py'
+adding 'Thyroid_Detection_2022-0.0.1/setup.cfg'
+adding 'Thyroid_Detection_2022-0.0.1/DataTransform_Training/DataTransformation.py'
+adding 'Thyroid_Detection_2022-0.0.1/DataTransform_Training/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Training/DataTypeValidation.py'
+adding 'Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Training/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/Training_Raw_data_validation/rawValidation.py'
+adding 'Thyroid_Detection_2022-0.0.1/Training_Raw_data_validation/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Prediction/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/DataTypeValidation_Insertion_Prediction/DataTypeValidationPrediction.py'
+adding 'Thyroid_Detection_2022-0.0.1/tests/test_script.py'
+adding 'Thyroid_Detection_2022-0.0.1/tests/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/file_operations/file_methods.py'
+adding 'Thyroid_Detection_2022-0.0.1/file_operations/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/application_logging/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/application_logging/logger.py'
+adding 'Thyroid_Detection_2022-0.0.1/best_model_finder/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/best_model_finder/tuner.py'
+adding 'Thyroid_Detection_2022-0.0.1/data_preprocessing/clustering.py'
+adding 'Thyroid_Detection_2022-0.0.1/data_preprocessing/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/data_preprocessing/preprocessing.py'
+adding 'Thyroid_Detection_2022-0.0.1/Prediction_Raw_Data_Validation/predictionDataValidation.py'
+adding 'Thyroid_Detection_2022-0.0.1/Prediction_Raw_Data_Validation/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/data_ingestion/data_loader.py'
+adding 'Thyroid_Detection_2022-0.0.1/data_ingestion/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/data_ingestion/data_loader_prediction.py'
+adding 'Thyroid_Detection_2022-0.0.1/Thyroid_Detection_2022.egg-info/PKG-INFO'
+adding 'Thyroid_Detection_2022-0.0.1/Thyroid_Detection_2022.egg-info/SOURCES.txt'
+adding 'Thyroid_Detection_2022-0.0.1/Thyroid_Detection_2022.egg-info/top_level.txt'
+adding 'Thyroid_Detection_2022-0.0.1/Thyroid_Detection_2022.egg-info/dependency_links.txt'
+adding 'Thyroid_Detection_2022-0.0.1/DataTransformation_Prediction/__init__.py'
+adding 'Thyroid_Detection_2022-0.0.1/DataTransformation_Prediction/DataTransformationPrediction.py'
+removing 'Thyroid_Detection_2022-0.0.1' (and everything under it)

@@ -496,3 +496,48 @@
 2022-03-17/09:57:30		Entered the load_model method of the File_Operation class
 2022-03-17/09:57:30		Model File RandomForest0 loaded. Exited the load_model method of the Model_Finder class
 2022-03-17/09:57:30		End of Prediction
+2022-03-17/10:44:21		Start of Validation on files for prediction!!
+2022-03-17/10:44:21		Raw Data Validation Complete!!
+2022-03-17/10:44:21		Starting Data Transforamtion!!
+2022-03-17/10:44:21		DataTransformation Completed!!!
+2022-03-17/10:44:21		Creating Prediction_Database and tables on the basis of given schema!!!
+2022-03-17/10:44:21		Table creation Completed!!
+2022-03-17/10:44:21		Insertion of Data into Table started!!!!
+2022-03-17/10:44:21		Insertion in Table completed!!!
+2022-03-17/10:44:21		Deleting Good Data Folder!!!
+2022-03-17/10:44:21		Good_Data folder deleted!!!
+2022-03-17/10:44:21		Moving bad files to Archive and deleting Bad_Data folder!!!
+2022-03-17/10:44:21		Bad files moved to archive!! Bad folder Deleted!!
+2022-03-17/10:44:21		Validation Operation completed!!
+2022-03-17/10:44:21		Extracting csv file from table
+2022-03-17/10:44:21		Start of Prediction
+2022-03-17/10:44:21		Entered the get_data method of the Data_Getter class
+2022-03-17/10:44:21		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-03-17/10:44:21		Successfully dropped the columns['TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured', 'TBG']
+2022-03-17/10:44:21		Columns dropped successfully!
+2022-03-17/10:44:21		Replaced invalid values successfully!
+2022-03-17/10:44:21		Entered the is_null_present method of the Preprocessor class
+2022-03-17/10:44:21		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-03-17/10:44:21		Entered the impute_missing_values method of the Preprocessor class
+2022-03-17/10:44:21		Missing values imputed using KNNImputer for ['age', 'sex', 'TSH', 'TT4', 'FTI'] cols
+2022-03-17/10:44:21		Missing values imputed using median  for 'T4U', 'T3' cols
+2022-03-17/10:44:21		'age', 'sex', 'TSH', 'TT4', 'FTI' columns dropped successfully
+2022-03-17/10:44:21		New dataframe created  successfully
+2022-03-17/10:44:21		Entered the load_model method of the File_Operation class
+2022-03-17/10:44:21		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2022-03-17/10:44:21		Cluster creation successful
+2022-03-17/10:44:21		3 clusters created
+2022-03-17/10:44:21		Encoded model opened successfully
+2022-03-17/10:44:21		Entered the find_correct_model_file method of the File_Operation class
+2022-03-17/10:44:21		Exited the find_correct_model_file method of the Model_Finder class.
+2022-03-17/10:44:21		Entered the load_model method of the File_Operation class
+2022-03-17/10:44:21		Model File RandomForest3 loaded. Exited the load_model method of the Model_Finder class
+2022-03-17/10:44:21		Entered the find_correct_model_file method of the File_Operation class
+2022-03-17/10:44:21		Exited the find_correct_model_file method of the Model_Finder class.
+2022-03-17/10:44:21		Entered the load_model method of the File_Operation class
+2022-03-17/10:44:21		Model File KNN1 loaded. Exited the load_model method of the Model_Finder class
+2022-03-17/10:44:21		Entered the find_correct_model_file method of the File_Operation class
+2022-03-17/10:44:21		Exited the find_correct_model_file method of the Model_Finder class.
+2022-03-17/10:44:21		Entered the load_model method of the File_Operation class
+2022-03-17/10:44:21		Model File RandomForest0 loaded. Exited the load_model method of the Model_Finder class
+2022-03-17/10:44:21		End of Prediction
