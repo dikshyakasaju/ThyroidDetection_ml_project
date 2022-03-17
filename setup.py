@@ -1,9 +1,9 @@
-from setuptools import find_packages, setup
+from setuptools import setup, find_packages
 
 setup(
     name="thyroid-detection",
     version="0.0.1",
-    description="Thyroid Detection ML project",
+    description="ML project",
     author="Dikshya Pradhan",
     packages=find_packages(),
     license="MIT"
