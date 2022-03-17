@@ -39,5 +39,5 @@ tox==3.24.5
 tzlocal==2.0.0
 virtualenv==20.13.3
 tox
-
+imblearn
 
