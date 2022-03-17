@@ -10,6 +10,7 @@ cycler==0.10.0
 distlib==0.3.4
 filelock==3.6.0
 flake8==4.0.1
+flask
 Flask==1.1.1
 Flask-Cors==3.0.8
 Flask-MonitoringDashboard==3.0.6
