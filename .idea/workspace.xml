@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8304c17-3ea3-4286-83a7-752408df297d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_monitoringdashboard.db" beforeDir="false" afterPath="$PROJECT_DIR$/flask_monitoringdashboard.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/flask_monitoringdashboard.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/flask_monitoringdashboard.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_script.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
       <recent name="D:\Project_\WaferFaultDetection\1_Raw_data_validation" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.pytest for test_script.TestToPerform">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Thyroid_Detection" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,10 +151,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_script.TestToPerform" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.setup" />
         <item itemvalue="Python tests.pytest in test_script.py" />
-        <item itemvalue="Python tests.pytest for test_script.TestToPerform" />
         <item itemvalue="Python.tuner" />
       </list>
     </recent_temporary>
