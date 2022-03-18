@@ -57,11 +57,11 @@ In this step, we perform different sets of validation on the given set of traini
 - All the above steps are repeated on the validations set till Clustering the data. Once the data is clustered, based on the cluster number, the respective model is loaded and is used to predict the data for that cluster. 
 - After the prediction is done for all the clusters, the predictions along with the column names are saved in a CSV file at a given location and the location is returned to the client.
 
-#### Ops Pipeline
+## Ops Pipeline
 
 - Used GitHub Actions for continuous integration and continuous delivery (CI/CD).
 
-#### Model Deployment
+## Model Deployment
 
 - Model deployed to Heroku Cloud platform
 
