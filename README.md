@@ -42,12 +42,18 @@ In this step, we perform different sets of validation on the given set of traini
 #### Model Training 
 
 1) Data Export from Db - The data in a stored database is exported as a CSV file to be used for model training.
-2) Data Preprocessing   
+2) Data Preprocessing  
+
    a) Drop columns not useful for training the model. Such columns were selected while doing the EDA.
+
    b) Replace the invalid values with numpy “nan” so we can use imputer on such values.
+
    c) Encode the categorical values.
+
    d) Check for null values in the columns. If present, impute the null values using the KNN imputer on some features and median imputation on the rest.
+
    e) After imputing, handle the imbalanced dataset by using RandomOverSampler.
+
 3) Clustering - KMeans algorithm is used to create clusters in the preprocessed data. The optimum number of clusters is selected by plotting the elbow plot, and for the dynamic selection of the number of clusters, we are using "KneeLocator" function. The idea behind clustering is to implement different algorithms
    To train data in different clusters. The Kmeans model is trained over preprocessed data and the model is saved for further use in prediction.
 4) Model Selection - After clusters are created, we find the best model for each cluster by using two algorithms, "Random Forest" and "KNN". For each cluster, both the algorithms are passed with the best parameters derived from RandomSearch. The AUC scores for both models are calculated and the model with the best score is chosen. Similarly, the model is selected for each cluster. All the models for every cluster are saved for use in prediction. 
