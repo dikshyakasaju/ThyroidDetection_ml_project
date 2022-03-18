@@ -4,6 +4,10 @@
 
 To build a classification methodology to predict the type of Thyroid based on the given training data. 
 
+### Architecture
+
+![](images/architecture.png)
+
 
 ## TRAINING
 
@@ -60,7 +64,7 @@ In this step, we perform different sets of validation on the given set of traini
 
 ## VALIDATION
 
-- All the above steps are repeated on the validations set till Clustering the data. Once the data is clustered, based on the cluster number, the respective model is loaded and is used to predict the data for that cluster. 
+- All the above steps are repeated on the validation set till Clustering the data. Once the data is clustered, based on the cluster number, the respective model is loaded and is used to predict the data for that cluster. 
 - After the prediction is done for all the clusters, the predictions along with the column names are saved in a CSV file at a given location and the location is returned to the client.
 
 ## Ops Pipeline
