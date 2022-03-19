@@ -106,11 +106,3 @@ if __name__ == "__main__":
     # httpd.serve_forever()
     app.run(debug=True)
 
-# port = int(os.getenv("PORT", 80))
-# if __name__ == "__main__":
-#     host = '0.0.0.0'
-#     print(port)
-#     httpd = simple_server.make_server(host=host, app=app, port=port)
-#     # # print("Serving on %s %d" % (host, port))
-#     httpd.serve_forever()
-#     # app.run(debug=True)
